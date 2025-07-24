@@ -5,8 +5,8 @@
 
     const Button: React.FC<ButtonProps> = ({
       buttonLabel,
-      buttonSize = 'medium', // Default size
-      buttonShape = 'rounded-md', // Default shape
+      size = 'medium', // Changed from buttonSize to size
+      shape = 'rounded-md', // Changed from buttonShape to shape
       buttonBackgroundColor,
       action
     }) => {
@@ -29,8 +29,8 @@
           onClick={action}
           className={`
             ${backgroundColorClass}
-            ${sizeClasses[buttonSize]}
-            ${buttonShape}
+            ${sizeClasses[size]} {/* Using 'size' here */}
+            ${shape} {/* Using 'shape' here */}
             font-semibold text-white
             transition duration-300 ease-in-out
             shadow-md hover:shadow-lg

@@ -22,29 +22,29 @@
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               <Button
                 buttonLabel="Small Rounded"
-                buttonSize="small"
-                buttonShape="rounded-sm"
+                size="small" // Changed from buttonSize to size
+                shape="rounded-sm" // Changed from buttonShape to shape
                 buttonBackgroundColor="blue"
                 action={() => alert('Small button clicked!')}
               />
               <Button
                 buttonLabel="Medium Default"
-                buttonSize="medium"
-                buttonShape="rounded-md"
+                size="medium" // Changed from buttonSize to size
+                shape="rounded-md" // Changed from buttonShape to shape
                 buttonBackgroundColor="orange"
                 action={() => alert('Medium button clicked!')}
               />
               <Button
                 buttonLabel="Large Full"
-                buttonSize="large"
-                buttonShape="rounded-full"
+                size="large" // Changed from buttonSize to size
+                shape="rounded-full" // Changed from buttonShape to shape
                 buttonBackgroundColor="green"
                 action={() => alert('Large button clicked!')}
               />
               <Button
                 buttonLabel="Another Medium"
-                buttonSize="medium"
-                buttonShape="rounded-md"
+                size="medium" // Changed from buttonSize to size
+                shape="rounded-md" // Changed from buttonShape to shape
                 buttonBackgroundColor="red"
                 action={() => alert('Another medium button clicked!')}
               />
