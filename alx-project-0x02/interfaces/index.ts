@@ -3,8 +3,8 @@
 
     export interface ButtonProps {
       buttonLabel: string;
-      buttonSize?: 'small' | 'medium' | 'large'; // Added buttonSize
-      buttonShape?: 'rounded-sm' | 'rounded-md' | 'rounded-full'; // Added buttonShape
+      buttonSize?: 'small' | 'medium' | 'large'; // Ensure this line is present
+      buttonShape?: 'rounded-sm' | 'rounded-md' | 'rounded-full'; // Ensure this line is present
       buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green';
       action?: () => void;
     }
