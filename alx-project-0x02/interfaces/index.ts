@@ -2,10 +2,11 @@
     import { ReactNode } from 'react';
 
     export interface ButtonProps {
-      buttonLabel: string
-      buttonSize?: string
-      buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green'
-      action?: () => void
+      buttonLabel: string;
+      buttonSize?: 'small' | 'medium' | 'large'; // Added buttonSize
+      buttonShape?: 'rounded-sm' | 'rounded-md' | 'rounded-full'; // Added buttonShape
+      buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green';
+      action?: () => void;
     }
 
     export interface LayoutProps {
@@ -13,7 +14,7 @@
     }
 
     export interface PageRouteProps {
-      pageRoute: string
+      pageRoute: string;
     }
 
     export interface CardProps {
@@ -21,7 +22,6 @@
       content: string;
     }
 
-    // New interfaces for PostModal
     export interface Post {
       id: number;
       title: string;
