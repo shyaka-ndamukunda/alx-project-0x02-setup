@@ -1,7 +1,7 @@
     // pages/about.tsx
 
     import Head from 'next/head';
-    import Button from '@/components/common/Button'; // Import the Button component
+    import Button from '@/components/common/Button';
 
     const AboutPage: React.FC = () => {
       return (
@@ -22,29 +22,29 @@
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               <Button
                 buttonLabel="Small Rounded"
-                size="small" // Changed from buttonSize to size
-                shape="rounded-sm" // Changed from buttonShape to shape
+                size="small"
+                shape="rounded-sm"
                 buttonBackgroundColor="blue"
                 action={() => alert('Small button clicked!')}
               />
               <Button
                 buttonLabel="Medium Default"
-                size="medium" // Changed from buttonSize to size
-                shape="rounded-md" // Changed from buttonShape to shape
+                size="medium"
+                shape="rounded-md"
                 buttonBackgroundColor="orange"
                 action={() => alert('Medium button clicked!')}
               />
               <Button
                 buttonLabel="Large Full"
-                size="large" // Changed from buttonSize to size
-                shape="rounded-full" // Changed from buttonShape to shape
+                size="large"
+                shape="rounded-full"
                 buttonBackgroundColor="green"
                 action={() => alert('Large button clicked!')}
               />
               <Button
                 buttonLabel="Another Medium"
-                size="medium" // Changed from buttonSize to size
-                shape="rounded-md" // Changed from buttonShape to shape
+                size="medium"
+                shape="rounded-md"
                 buttonBackgroundColor="red"
                 action={() => alert('Another medium button clicked!')}
               />

@@ -1,15 +1,14 @@
     // pages/home.tsx
 
     import Head from 'next/head';
-    import React, { useState } from 'react'; // Import useState
+    import React, { useState } from 'react';
     import Card from '@/components/common/Card';
-    import PostModal from '@/components/common/PostModal'; // Import PostModal
-    import { type Post } from '@/interfaces'; // Import Post interface
+    import PostModal from '@/components/common/PostModal';
+    import { type Post } from '@/interfaces';
 
     const HomePage: React.FC = () => {
       const [isModalOpen, setIsModalOpen] = useState(false);
       const [posts, setPosts] = useState<Post[]>([
-        // Initial static posts (can be removed later if all posts come from API)
         { id: 1, title: 'Dynamic Content 1', content: 'This is the content for the first card. It demonstrates how reusable components work with different data.' },
         { id: 2, title: 'Feature Highlight', content: 'Our application offers a variety of features designed to simplify your daily tasks and enhance your experience.' },
         { id: 3, title: 'Easy to Use', content: 'The intuitive interface ensures a smooth and enjoyable user journey from start to finish.' },
@@ -20,7 +19,7 @@
 
       const handleAddPost = (newPostData: { title: string; content: string }) => {
         const newPost: Post = {
-          id: posts.length > 0 ? Math.max(...posts.map(p => p.id)) + 1 : 1, // Simple ID generation
+          id: posts.length > 0 ? Math.max(...posts.map(p => p.id)) + 1 : 1,
           ...newPostData,
         };
         setPosts((prevPosts) => [...prevPosts, newPost]);
@@ -40,7 +39,6 @@
               Explore some of our features below.
             </p>
 
-            {/* Button to open the modal */}
             <button
               onClick={() => setIsModalOpen(true)}
               className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 mb-12"
@@ -55,7 +53,6 @@
             </div>
           </div>
 
-          {/* Post Modal */}
           <PostModal
             isOpen={isModalOpen}
             onClose={() => setIsModalOpen(false)}

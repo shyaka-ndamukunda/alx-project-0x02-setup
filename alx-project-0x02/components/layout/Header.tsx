@@ -1,11 +1,11 @@
     // components/layout/Header.tsx
 
     import Link from "next/link";
-    import Button from "@/components/common/Button"; // Corrected import path for Button
+    import Button from "@/components/common/Button"; // Make sure Button.tsx exists in common folder
 
     const Header: React.FC = () => {
       return (
-        <header className="fixed w-full bg-white shadow-md z-40"> {/* Added z-index */}
+        <header className="fixed w-full bg-white shadow-md z-40">
           <div className="container mx-auto flex justify-between items-center py-6 px-4 md:px-8">
             <Link href="/" className="text-3xl md:text-5xl font-bold text-gray-800 tracking-tight">
               Splash App
@@ -29,12 +29,12 @@
               <Button
                 buttonLabel="Sign In"
                 buttonBackgroundColor="red"
-                size="medium" // Using 'size' prop
+                size="medium"
               />
               <Button
                 buttonLabel="Sign Up"
                 buttonBackgroundColor="blue"
-                size="medium" // Using 'size' prop
+                size="medium"
               />
             </div>
           </div>
