@@ -20,6 +20,9 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
           <Link href="/posts" className="hover:text-gray-300">
             Posts
           </Link>
+          <Link href="/users" className="hover:text-gray-300">
+            Users
+          </Link>
         </div>
       </nav>
     </header>
