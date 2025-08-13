@@ -1,2 +1,5 @@
-// interfaces/index.ts
-// Interface definitions will go here in a later task.
+export interface UserProps {
+  image: string;
+  name: string;
+  email: string;
+}

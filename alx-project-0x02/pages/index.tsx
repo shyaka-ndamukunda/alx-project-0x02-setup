@@ -1,7 +1,14 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Card from '../components/common/Card';
 
 export default function Home() {
+  const user = {
+    image: "https://placehold.co/100x100/A0AEC0/FFFFFF?text=Shyaka",
+    name: "Shyaka Ndamukunda",
+    email: "shyaka.ndamukunda@alustudent.com",
+  };
+
   return (
     <div>
       <Head>
@@ -17,6 +24,9 @@ export default function Home() {
           <Link href="/about" className="text-blue-500 hover:text-blue-700">
             Go to the About Page
           </Link>
+        </div>
+        <div className="mt-8">
+          <Card image={user.image} name={user.name} email={user.email} />
         </div>
       </main>
     </div>
