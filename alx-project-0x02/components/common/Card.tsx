@@ -1,16 +1,11 @@
 import React from 'react';
-import { UserProps } from '../../interfaces';
+import { CardProps } from '../../interfaces';
 
-const Card: React.FC<UserProps> = ({ image, name, email }) => {
+const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 m-4 w-80 text-center">
-      <img
-        src={image}
-        alt={`${name}'s profile`}
-        className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-blue-500"
-      />
-      <h2 className="text-xl font-bold mb-1">{name}</h2>
-      <p className="text-gray-600">{email}</p>
+      <h2 className="text-xl font-bold mb-1">{title}</h2>
+      <p className="text-gray-600">{content}</p>
     </div>
   );
 };
