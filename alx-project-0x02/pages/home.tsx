@@ -4,7 +4,10 @@ import Card from '@/components/common/Card';
 const HomePage = () => {
   return (
     <div>
-      <Header />
+      <Header
+        title="Home Page"
+        description="This is the main page of our application."
+      />
       <div className="min-h-screen flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold">This is the Home Page</h1>
         <Card
