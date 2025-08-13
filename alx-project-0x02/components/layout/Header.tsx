@@ -17,6 +17,9 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
           <Link href="/about" className="hover:text-gray-300">
             About
           </Link>
+          <Link href="/posts" className="hover:text-gray-300">
+            Posts
+          </Link>
         </div>
       </nav>
     </header>
