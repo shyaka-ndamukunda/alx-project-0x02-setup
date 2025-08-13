@@ -10,3 +10,10 @@ export interface ButtonProps {
   onClick: () => void;
   className?: string;
 }
+
+export interface Post {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
