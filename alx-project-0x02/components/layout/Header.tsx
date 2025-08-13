@@ -1,8 +1,16 @@
-// components/layout/Header.tsx
+import Link from 'next/link';
+
 const Header = () => {
   return (
-    <header>
-      {/* Header content will go here in a later task */}
+    <header className="bg-gray-800 text-white p-4">
+      <nav className="flex space-x-4">
+        <Link href="/home" className="hover:text-gray-300">
+          Home
+        </Link>
+        <Link href="/about" className="hover:text-gray-300">
+          About
+        </Link>
+      </nav>
     </header>
   );
 };
