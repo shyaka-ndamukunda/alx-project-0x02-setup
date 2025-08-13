@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Header from '@/components/layout/Header';
-import Card from '@/components/common/Card';
+import PostCard from '@/components/common/PostCard';
 import PostModal from '@/components/common/PostModal';
 import { type Post } from '@/interfaces';
 
@@ -47,7 +47,7 @@ const HomePage = () => {
         />
         <div className="mt-8 flex flex-wrap justify-center">
           {posts.map((post) => (
-            <Card key={post.id} title={post.title} content={post.body} />
+            <PostCard key={post.id} title={post.title} body={post.body} />
           ))}
         </div>
       </div>
